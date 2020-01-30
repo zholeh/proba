@@ -12,7 +12,7 @@ if (isMaster) {
     readFile("../mock/test.jpg", (err, data) => {
       const md5: Md5 = new Md5();
       const res = md5.appendByteArray(data).end();
-      response.end("Have a nice one you too!" + res);
+      response.end("Have a nice one you too!" + res + '. Worker: ' + worker.id);
     });
   });
   http.listen(3000, () => {

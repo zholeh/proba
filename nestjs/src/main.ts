@@ -3,7 +3,7 @@ import { AppModule } from "./app.module";
 import { isMaster, fork, worker } from "cluster";
 
 if (isMaster) {
-  for (let index = 0; index < 1; index++) {
+  for (let index = 0; index < 2; index++) {
     fork();
   }
 } else {
