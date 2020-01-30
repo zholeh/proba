@@ -19,14 +19,5 @@ export class AppService {
         }
       });
     });
-
-    // (resolve, reject) => {
-    //   readFile("../mock/test.jpg", (err, data) => {
-    //     const md5: Md5 = new Md5();
-    //     const res = md5.appendByteArray(data).end();
-    //     return "Have a nice one you too!" + res;
-    //   }
-    // })
-    // return 'Hello World!';
   }
 }
