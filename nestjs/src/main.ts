@@ -7,7 +7,7 @@ if (isMaster) {
     fork();
   }
 } else {
-  async function bootstrap() {
+  const bootstrap = async function () {
     const app = await NestFactory.create(AppModule);
     await app.listen(3000, () => {
       console.info("Hi there from worker", worker.id);
